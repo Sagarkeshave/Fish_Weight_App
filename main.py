@@ -15,9 +15,7 @@ st.text_input("Enter your Name: ", key="name")
 # # load model
 
 
-model = open('best_model.pkl', 'rb')
-
-model = pickle.load(model)
+model = pickle.load(open('best_model.pkl', "rb"))
 
 def predict(inp_species, input_Length1, input_Length2, input_Length3, input_Height, input_Width):
 
